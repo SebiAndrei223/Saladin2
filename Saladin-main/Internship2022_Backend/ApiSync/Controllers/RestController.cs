@@ -23,12 +23,12 @@ namespace Internship2021_Backend.Controllers
         [Route("knights")]
         public async Task<IActionResult> GetKnights(CancellationToken cancellationToken)
         {
-            string queryString = @"SELECT K.KnightId, K.Name, KT.DictionaryKnightTypeName , K.Name LegionName, B.Name BattleName, KB.CoinsAwarded CoinsAwardedPerBattle
+            string queryString = @"SELECT K.KnightId, K.Name, KT.DictionaryKnightTypeName , L.Name LegionName, B.Name BattleName, KB.CoinsAwarded CoinsAwardedPerBattle
                                    FROM Knight K
                                    JOIN LEGION L on K.LegionId = L.LegionId
                                    JOIN DictionaryKnightType KT on K.DictionaryKnightTypeId = KT.DictionaryKnightTypeId
                                    LEFT JOIN KnightXBattle KB on K.KnightId = KB.KnightId
-                                   LEFT JOIN Battle B on KB.BattleId = B.BattleId
+                                   JOIN Battle B on KB.BattleId = B.BattleId
                                    ORDER BY K.Name";
 
             List<Knight> drivers = await _dataService.GetKights(queryString, cancellationToken);

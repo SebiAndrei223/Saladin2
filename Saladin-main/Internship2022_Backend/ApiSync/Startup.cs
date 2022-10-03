@@ -27,6 +27,8 @@ namespace Internship2021_Backend
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Internship2021_Backend", Version = "v1" });
             });
+
+            services.AddScoped<DataService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
