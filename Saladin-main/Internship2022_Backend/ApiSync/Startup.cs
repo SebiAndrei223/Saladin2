@@ -20,7 +20,7 @@ namespace Internship2021_Backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<CacheService>();
-            services.AddScoped<DataService>();
+
             services.AddControllers();
             services.AddHttpContextAccessor();
             services.AddScoped<DataService>();
