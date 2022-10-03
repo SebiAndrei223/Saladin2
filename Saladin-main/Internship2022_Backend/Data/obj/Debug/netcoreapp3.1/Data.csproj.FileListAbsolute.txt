@@ -1,5 +1,0 @@
-C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
-C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
-C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
-C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
