@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TLvSR6IuMy6LXhQSdWBKF1ATBpXbLiFBtb9/Z0F9tPYK+Il2rIsaSa+pADqAqM14PrBB0f4vlRR5cSJqG0VuAw==",
+  "dgSpecHash": "jmO7yLecvWJcMNCx1YZek89PwrFbNVweeZkz6BLdstbkjbwYFrtHbY2RSWRQc9JZ8K2YL0+06ZdSXXiAz6qwLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\andra.iancu\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj",
   "expectedPackageFiles": [
@@ -24,5 +24,12 @@
     "C:\\Users\\andra.iancu\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\andra.iancu\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\andra.iancu\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\ApiSync\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

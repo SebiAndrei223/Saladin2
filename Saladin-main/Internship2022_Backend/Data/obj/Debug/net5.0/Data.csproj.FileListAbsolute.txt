@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\bin\Debug\net5.0\Data.deps.json
 C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\bin\Debug\net5.0\Data.dll
 C:\Users\tudor.bizdoaca\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\bin\Debug\net5.0\Data.pdb
@@ -22,3 +23,17 @@ C:\Users\andra.iancu\source\repos\Saladin2\Saladin-main\Internship2022_Backend\D
 C:\Users\andra.iancu\source\repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\refint\Data.dll
 C:\Users\andra.iancu\source\repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.pdb
 C:\Users\andra.iancu\source\repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\ref\Data.dll
+=======
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\bin\Debug\net5.0\Data.deps.json
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\bin\Debug\net5.0\Data.dll
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\bin\Debug\net5.0\Data.pdb
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.csproj.AssemblyReference.cache
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.AssemblyInfoInputs.cache
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.AssemblyInfo.cs
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.dll
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\refint\Data.dll
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\Data.pdb
+C:\Users\sebastian.andrei\Source\Repos\Saladin2\Saladin-main\Internship2022_Backend\Data\obj\Debug\net5.0\ref\Data.dll
+>>>>>>> e2a31fb6e7e5ab63e3cdee013eb4a33cea7a1b04
