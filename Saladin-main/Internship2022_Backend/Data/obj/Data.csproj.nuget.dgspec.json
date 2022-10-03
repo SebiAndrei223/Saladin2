@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andra.iancu\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {}
+    "C:\\Users\\sebastian.andrei\\Source\\Repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andra.iancu\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {
+    "C:\\Users\\sebastian.andrei\\Source\\Repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andra.iancu\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\sebastian.andrei\\Source\\Repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\andra.iancu\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\andra.iancu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andra.iancu\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\obj\\",
+        "projectPath": "C:\\Users\\sebastian.andrei\\Source\\Repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\sebastian.andrei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebastian.andrei\\Source\\Repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\andra.iancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebastian.andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
