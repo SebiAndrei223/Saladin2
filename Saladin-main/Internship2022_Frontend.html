@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function changedNumberOfCoinsAwarded(knightId, inputId) {
+
+    return jQuery.ajax({
+    headers: { 
+        'Accept': 'application/json',
+        'Content-Type': 'application/json' 
+    },
+    'type': 'POST',
+    'url': "http://localhost:5000/Rest/knights",
+    'data': JSON.stringify({ knightId: knightId, coinsAwardedPerBattle: document.getElementById(inputId).value }),
+    'dataType': 'json',
+    'success': (rez) => { alert(rez); },
+    'error': (rez, textStatus, errorThrown) => { alert(rez.responseText); }
+    });
+};
+
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $.get( "http://localhost:5000/Rest/knights", "", function( data ) {
+
+		var headings = Object.keys(data);
+
+        var html = '<table rules="all" style="margin: auto; background-color: rgba(0,0,0,0.6); color: white;border-radius: 20px;"';
+
+		// build table header
+      	html += '<thead>';
+          // build each cell using the heading's ith element
+            html += '<th style="padding: 20px; color: #ddb0b8; font-size: 17px"> KnightId </th>';
+            html += '<th style="padding: 20px; color: #ddb0b8; font-size: 17px"> Name </th>';
+            html += '<th style="padding: 20px; color: #ddb0b8; font-size: 17px"> RankName </th>';
+            html += '<th style="padding: 20px; color: #ddb0b8; font-size: 17px"> LegionName </th>';
+			html += '<th style="padding: 20px; color: #ddb0b8; font-size: 17px"> BattleName </th>';
+			html += '<th style="padding: 20px; color: #ddb0b8; font-size: 17px"> CoinsAwardedPerBattle </th>';
+        html += '</thead>';
+
+        // build table body
+        html += '<tbody>';
+        // use the length of first array to determine how many rows
+        for (i = 0, len = data.length; i < len; i++) {
+          html += '<tr>';
+          // build each cell using the heading's ith element
+            html += '<td style="padding: 7px;" align="right">' + data[i]['knightId'] + '</td>';
+            html += '<td style="padding: 7px;">' + data[i]['name'] + '</td>';
+            html += '<td style="padding: 7px;">' + data[i]['dictionaryKnightTypeName'] + '</td>';
+            html += '<td style="padding: 7px;">' + data[i]['legionName'] + '</td>';
+			html += '<td style="padding: 7px;">' + data[i]['battleName'] + '</td>';
+			html += '<td style="padding: 7px;" align="center"> <input id="coinsAwarded' + i +'" style="text-align: right; width: 70px; border-radius: 5px" value="' + data[i]['coinsAwardedPerBattle'] + '" />'
+			+ '<img src="coins.png" style="height: 20px; display:inline-block; vertical-align: middle; margin-right: 5px;" />'
+			+ '<button class="save-button" onclick="changedNumberOfCoinsAwarded(\''+ data[i]['knightId'] + '\', \'coinsAwarded' + i + '\')" >SAVE</button</td>';
+          html += '</tr>';
+        }
+        html += '</tbody>';
+        html += '</table>';
+		
+		$('.container').empty();
+        $('.container').append(html);
+    }, "json").fail(function(error) { alert(error.responseText); });
+  });
+});
+</script>
+<style>
+	@font-face{
+		font-family: "MedievalFont";
+		src: url("./Cardinal.ttf");
+	}
+
+	body{
+		background-image: url("background.png") ;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		font-family: Sans-serif;
+	}
+	.start-btn {
+	  display: block;
+	  padding: 40px 30px;
+	  border-radius: 50%;
+	  border: 3px solid rgba(255,255,255, 0.7);
+	  background: #564857;
+	  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.4);
+	  color: #ddb0b8;
+	  font-size: 1.5em;
+	  margin: 30px auto;
+	  cursor: url(data:image/png;base64,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), auto;
+	}
+	.save-button {
+		background: #481117;
+		color: white;
+		border: 0.5px solid white;
+		border-radius: 5px;
+		box-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+		text-shadow: none;
+		cursor: pointer;
+		font-weight: bold;
+	}
+	.save-button:hover {
+		background: #7E585C;
+	}
+
+	.quest-container{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-direction: column;
+
+		background-image: url("quest-background.png");
+		background-size: 900px 1490px;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 1490px;
+	}
+
+	.quest-list{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		position: relative;
+		top:-265px;
+	}
+	
+	.quest-title{
+		font-family: "MedievalFont";
+		position: relative;
+    	top: -125px;
+		font-size: 55px;
+	}
+
+	.quest-item{
+		width:500px;
+		display: block;
+		margin-bottom: 10px;
+		margin-top:10px
+	}
+
+	.highlight{
+		color: #ffffff;
+		font-weight: bold;
+		text-shadow: -1px 2px 7px black;
+	}
+
+	.raport-label{
+		color: green;
+		font-weight: bold;
+		align-self:flex-start;
+		font-style: italic;
+	}
+
+	.story{
+		font-size: 15px;
+    	font-style: italic;
+	}
+</style>
+</head>
+<body>
+
+<button id="btn1" class="start-btn">Start Battles</button>
+
+<div class="container"></div>
+
+<div class="quest-container">
+	<h1 class="quest-title">Internship 2022</h1>
+	<div class="quest-list">
+		<span style="width:500px">
+			<span class="story">Esti in anul 1189. La indemnul papei, impăratul Frederick Barbarossa, regele Philip al II-lea al Franței si regele Richard Inimă de leu pornesc a treia cruciadă pentru Țara Sfântă. Sultanul Saladin se opune invaziei. 
+				<br>Ca împărat, rege sau respectiv sultan, deciziile si acțiunile pe care le iei vor impacta direct soarta razboiului - asa ca e timpul să treci la treabă! 
+				<br>P.S. Deși inginerii tăi sunt destul de vigilenți, e posibil ca unele probleme să nu fie observate de ei în rapoarte - rămâne la datoria ta să le descoperi.</span></span>
+			<br>
+			<!-- <span class="raport-label">[RAPORT 0]</span> -->
+				<div class="quest-item">
+					<span class="story">Înainte de a incepe orice bătălie, trebuie să te asiguri ca soldații tăi au acces la toate resursele de care au nevoie</span>
+					<span class="quest-item"><span class="highlight">Quest 0.1: </span>Să pornească cu success ApiSync din soluția de backend.</span>
+				</div>
+
+			<!-- <span class="raport-label">[RAPORT 1]</span> -->
+			<div class="quest-item">
+				<span class="story">Comandanții tăi se plâng că listele lor de cavaleri au fost sabotate și nu mai au acces la ele.</span>
+				<span class="quest-item"><span class="highlight">Quest 1.1: </span>Să se afișeze lista de cavaleri îndată de incepe bătălia (vezi buton in pagina de frontend)</span>
+				<span class="story">Deși acum au acces la listă, ei constată ca anumite informații sunt eronate.</span>
+				<span class="quest-item"><span class="highlight">Quest 1.2: </span>Să se afișeze înformațiile corecte, sugerate de capul tabelului.</span>
+			</div>
+
+			<!-- <span class="raport-label">[RAPORT 3]</span> -->
+			<div class="quest-item">
+				<span class="story">Organizarea armatei este haotică. Cavalerii nu iși dau seama din ce legiuni fac parte si la ce bătălii trebuie să participe.</span>
+				<span class="quest-item"><span class="highlight">Quest 3.1: </span>Să se creeze in DB o legatură directă (și corectă) între legiuni si bătălii</span>
+				<span class="quest-item"><span class="highlight">Quest 3.2: </span>Să se afișeze suma totală de monede per legiune</span>
+			</div>
+
+			<!-- <span class="raport-label">[RAPORT 4]</span> -->
+			<div class="quest-item">
+				<span class="story">Comandanții tăi se plâng (din nou) că anumiți soldați din legiuni nu au parcipat la bătălii, dar nu pot afla care dintre ei.</span>
+				<span class="quest-item"><span class="highlight">Quest 4.1: </span>Pentru fiecare legiune, sa se afișeze toți soldații care nu au participat la o bătălie a legiunii (daca cel putin un soldat dintr-o legiune a participat la o bătălie, se consideră că întreaga legiune a participat)</span>
+				<span class="quest-item"><span class="highlight">Quest 4.2 (bonus): </span>Pentru Q4.1, să se arate și la care bătălii nu a participat cavalerul</span>
+			</div>
+	</div>
+</div>
+
+
+</body>
+</html>

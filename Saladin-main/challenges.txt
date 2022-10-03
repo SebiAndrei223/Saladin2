@@ -1,0 +1,8 @@
+0.1: Să pornească cu success ApiSync din soluția de backend
+1.1: Să se afișeze lista de cavaleri îndată de incepe bătălia (vezi buton in pagina de frontend)
+1.2: Să se afișeze înformațiile corecte, sugerate de capul tabelului.
+2.1: La introducerea de monede și apăsarea pe buton, să se salveze nr. de monede căștigate pentru cavaler în tabela KnightXBattle
+2.2: La update de coins castigate per batalie, rangul cavalerilor sa se schimbe in functie de marjele din tabela DictionaryKnightType
+3.1: Să se creeze in DB o legatură directă (și corectă) între legiuni si bătălii
+3.2: Să se afișeze suma totală de monede per legiune
+4.1: Pentru fiecare legiune, sa se afișeze toți soldații care nu au participat la o bătălie a legiunii (daca cel putin un soldat dintr-o legiune a participat la o bătălie, se 4.2 (bonus): Pentru Q4.1, să se arate și la care bătălii nu a participat cavalerul
