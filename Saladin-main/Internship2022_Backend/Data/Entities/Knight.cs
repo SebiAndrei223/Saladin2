@@ -10,5 +10,6 @@ namespace Data.Entities
         public string LegionName { get; set; }
         public string BattleName { get; set; }
         public int CoinsAwardedPerBattle { get; set; }
+        public int BattleId { get;set; }
     }
 }

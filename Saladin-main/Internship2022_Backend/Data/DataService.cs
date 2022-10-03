@@ -25,10 +25,10 @@ namespace Data
         {
             _cacheService.Read<List<Knight>>(queryString, out List<Knight> knights);
 
-            if (knights != null)
-            {
-                return knights;
-            }
+            //if (knights != null)
+            //{
+            //    return knights;
+            //}
 
             using SqlConnection connection = new(_connectionString);
             SqlCommand command = new(queryString, connection);
@@ -49,6 +49,7 @@ namespace Data
                             DictionaryKnightTypeName = reader["DictionaryKnightTypeName"].ToString(),
                             LegionName = reader["LegionName"].ToString(),
                             BattleName = reader["BattleName"] != System.DBNull.Value ? reader["BattleName"].ToString() : null,
+                            BattleId = Int32.Parse(reader["BattleId"].ToString()),
                             CoinsAwardedPerBattle = reader["CoinsAwardedPerBattle"] != System.DBNull.Value ? Int32.Parse(reader["CoinsAwardedPerBattle"].ToString()) : 0
                         };
 

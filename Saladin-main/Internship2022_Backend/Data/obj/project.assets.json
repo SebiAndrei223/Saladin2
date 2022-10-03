@@ -657,19 +657,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cosmin.gostin\\.nuget\\packages\\": {}
+    "C:\\Users\\andra.iancu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\cosmin.gostin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cosmin.gostin\\Source\\Repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\obj\\",
+      "projectPath": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\andra.iancu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cosmin.gostin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\andra.iancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

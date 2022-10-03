@@ -6,5 +6,6 @@ namespace ApiSync.Commands
     {
         public int KnightId { get; set; }
         public int CoinsAwardedPerBattle { get; set; }
+        public int BattleId { get; set; }
     }
 }

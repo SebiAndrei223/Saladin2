@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj": {}
+    "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj": {
+    "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj",
+        "projectUniqueName": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj",
         "projectName": "ApiSync",
-        "projectPath": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj",
-        "packagesPath": "C:\\Users\\cosmin.gostin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\ApiSync\\obj\\",
+        "projectPath": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\ApiSync\\ApiSync.csproj",
+        "packagesPath": "C:\\Users\\andra.iancu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\ApiSync\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cosmin.gostin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andra.iancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj"
+              "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj"
               }
             }
           }
@@ -72,17 +72,17 @@
         }
       }
     },
-    "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {
+    "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\cosmin.gostin\\source\\repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\cosmin.gostin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cosmin.gostin\\Source\\Repos\\Saladin2\\Saladin-main\\Internship2022_Backend\\Data\\obj\\",
+        "projectPath": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\andra.iancu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andra.iancu\\Source\\Repos\\Saladin3\\Saladin-main\\Internship2022_Backend\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cosmin.gostin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andra.iancu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
