@@ -41,21 +41,18 @@ namespace Data
                 knights = new();
                 while (await reader.ReadAsync(cancellationToken))
                 {
-                    while (knights != null)
-                    {
                         Knight knight = new()
                         {
                             KnightId = Int32.Parse(reader["KnightId"].ToString()),
                             Name = reader["Name"].ToString(),
                             DictionaryKnightTypeName = reader["DictionaryKnightTypeName"].ToString(),
                             LegionName = reader["LegionName"].ToString(),
-                            BattleName = reader["BattleName"].ToString(),
-                            CoinsAwardedPerBattle = Int32.Parse(reader["CoinsAwardedPerBattle"].ToString())
+                            BattleName = reader["BattleName"] != System.DBNull.Value ? reader["BattleName"].ToString() : null,
+                            CoinsAwardedPerBattle = reader["CoinsAwardedPerBattle"] != System.DBNull.Value ? Int32.Parse(reader["CoinsAwardedPerBattle"].ToString()) : 0
                         };
 
                         Console.WriteLine($"Adding knight to list {JsonConvert.SerializeObject(knight)}");
                         knights.Add(knight);
-                    }
                 }
 
                 reader.Close();

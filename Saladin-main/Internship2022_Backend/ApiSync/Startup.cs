@@ -22,6 +22,8 @@ namespace Internship2021_Backend
             services.AddScoped<CacheService>();
 
             services.AddControllers();
+            services.AddHttpContextAccessor();
+            services.AddScoped<DataService>();
 
             services.AddSwaggerGen(c =>
             {
